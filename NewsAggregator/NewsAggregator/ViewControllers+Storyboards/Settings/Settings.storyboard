@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMb-BU-Ba2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="UtE-N3-YVd">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="NtU-rK-lCp" customClass="SettingsViewController" customModule="NewsAggregator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSi-b1-ZTT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMt-LJ-5rH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4au-eM-ZVr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4au-eM-ZVr" firstAttribute="leading" secondItem="tNQ-jN-zax" secondAttribute="leading" id="GnM-GB-f1i"/>
+                            <constraint firstItem="tNQ-jN-zax" firstAttribute="bottom" secondItem="RMt-LJ-5rH" secondAttribute="bottom" id="Teh-5V-QBn"/>
+                            <constraint firstItem="tNQ-jN-zax" firstAttribute="trailing" secondItem="RMt-LJ-5rH" secondAttribute="trailing" id="YGb-y9-VPv"/>
+                            <constraint firstItem="4au-eM-ZVr" firstAttribute="trailing" secondItem="tNQ-jN-zax" secondAttribute="trailing" id="gl5-VD-mRA"/>
+                            <constraint firstItem="RMt-LJ-5rH" firstAttribute="top" secondItem="tNQ-jN-zax" secondAttribute="top" id="hOf-IN-Rqh"/>
+                            <constraint firstItem="RMt-LJ-5rH" firstAttribute="leading" secondItem="tNQ-jN-zax" secondAttribute="leading" id="phK-ug-1HR"/>
+                            <constraint firstItem="4au-eM-ZVr" firstAttribute="top" secondItem="tNQ-jN-zax" secondAttribute="top" id="uyS-zN-ZK7"/>
+                            <constraint firstItem="tNQ-jN-zax" firstAttribute="bottom" secondItem="4au-eM-ZVr" secondAttribute="bottom" id="vlt-1U-arp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tNQ-jN-zax"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="nz3-CD-rIW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="oiN-fN-yWf">
+                            <connections>
+                                <action selector="DoneAction:" destination="NtU-rK-lCp" id="43K-CR-jq5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="settingTableView" destination="RMt-LJ-5rH" id="8m4-Ae-A3V"/>
+                        <outlet property="timePickerView" destination="4au-eM-ZVr" id="DRD-2w-OY1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HzG-pA-QQR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="-22.098214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WWG-HH-gAI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LMb-BU-Ba2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ipB-B1-gE9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NtU-rK-lCp" kind="relationship" relationship="rootViewController" id="Fxq-8f-i68"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAN-X3-J2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="-22.098214285714285"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Target News View Controller-->
+        <scene sceneID="lu9-gN-DeF">
+            <objects>
+                <viewController storyboardIdentifier="TargetNewsViewController" id="tD3-vJ-vxV" customClass="TargetNewsViewController" customModule="NewsAggregator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HdS-fK-1Fw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48d-FW-tWF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shR-G8-Pey">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1639"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-Gb-X8a">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="b8h-Gb-X8a" secondAttribute="height" id="LPZ-rB-dJ7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE NEWS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvw-m1-Mu7">
+                                                <rect key="frame" x="10" y="424" width="394" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-dz-Hqw">
+                                                <rect key="frame" x="5" y="459" width="404" height="1164"/>
+                                                <string key="text">fwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwefwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkkfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfkfwelmfwekfewfk</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Источник:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lN5-Tm-KEi">
+                                                <rect key="frame" x="10" y="1628" width="50" height="11"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="fwiehfiowehfiowehfiowheoifhweiofhwioehfiowehfiowehfiowehfoiwehfoiwehfiowehfio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="JW9-8a-l01">
+                                                <rect key="frame" x="65" y="1628" width="344" height="11"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="CIg-dz-Hqw" firstAttribute="top" secondItem="cvw-m1-Mu7" secondAttribute="bottom" constant="5" id="1QV-hE-gQF"/>
+                                            <constraint firstItem="b8h-Gb-X8a" firstAttribute="top" secondItem="shR-G8-Pey" secondAttribute="top" id="9Iv-l6-zoy"/>
+                                            <constraint firstAttribute="bottom" secondItem="lN5-Tm-KEi" secondAttribute="bottom" id="CZh-8P-f8J"/>
+                                            <constraint firstItem="JW9-8a-l01" firstAttribute="leading" secondItem="lN5-Tm-KEi" secondAttribute="trailing" constant="5" id="DY1-4D-cjP"/>
+                                            <constraint firstItem="b8h-Gb-X8a" firstAttribute="leading" secondItem="shR-G8-Pey" secondAttribute="leading" id="Ibh-92-zUJ"/>
+                                            <constraint firstItem="lN5-Tm-KEi" firstAttribute="leading" secondItem="cvw-m1-Mu7" secondAttribute="leading" id="TI1-z6-Zdo"/>
+                                            <constraint firstAttribute="trailing" secondItem="JW9-8a-l01" secondAttribute="trailing" constant="5" id="Uo5-wd-I2t"/>
+                                            <constraint firstAttribute="trailing" secondItem="cvw-m1-Mu7" secondAttribute="trailing" constant="10" id="VvC-zh-u48"/>
+                                            <constraint firstItem="cvw-m1-Mu7" firstAttribute="leading" secondItem="shR-G8-Pey" secondAttribute="leading" constant="10" id="aEd-op-UHC"/>
+                                            <constraint firstAttribute="trailing" secondItem="CIg-dz-Hqw" secondAttribute="trailing" constant="5" id="awa-zk-k6i"/>
+                                            <constraint firstItem="JW9-8a-l01" firstAttribute="centerY" secondItem="lN5-Tm-KEi" secondAttribute="centerY" id="bC9-zL-L9s"/>
+                                            <constraint firstAttribute="trailing" secondItem="b8h-Gb-X8a" secondAttribute="trailing" id="g0i-Gc-J9l"/>
+                                            <constraint firstItem="CIg-dz-Hqw" firstAttribute="leading" secondItem="shR-G8-Pey" secondAttribute="leading" constant="5" id="lTV-P8-DTY"/>
+                                            <constraint firstItem="cvw-m1-Mu7" firstAttribute="top" secondItem="b8h-Gb-X8a" secondAttribute="bottom" constant="10" id="rjo-Gt-OIx"/>
+                                            <constraint firstItem="lN5-Tm-KEi" firstAttribute="top" secondItem="CIg-dz-Hqw" secondAttribute="bottom" constant="5" id="vDr-UB-YtD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="shR-G8-Pey" firstAttribute="width" secondItem="48d-FW-tWF" secondAttribute="width" id="E07-FB-mAs"/>
+                                    <constraint firstAttribute="trailing" secondItem="shR-G8-Pey" secondAttribute="trailing" id="dSq-u4-7dI"/>
+                                    <constraint firstItem="shR-G8-Pey" firstAttribute="leading" secondItem="48d-FW-tWF" secondAttribute="leading" id="hE0-TQ-aUi"/>
+                                    <constraint firstAttribute="bottom" secondItem="shR-G8-Pey" secondAttribute="bottom" id="shz-ZK-23j"/>
+                                    <constraint firstItem="shR-G8-Pey" firstAttribute="top" secondItem="48d-FW-tWF" secondAttribute="top" id="yRl-9I-V5A"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="g8A-wu-vpE"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0e1-jr-geA"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="48d-FW-tWF" firstAttribute="leading" secondItem="Foj-bG-kcs" secondAttribute="leading" id="99d-GG-KkV"/>
+                            <constraint firstItem="48d-FW-tWF" firstAttribute="trailing" secondItem="Foj-bG-kcs" secondAttribute="trailing" id="FFk-W3-UdN"/>
+                            <constraint firstItem="Foj-bG-kcs" firstAttribute="bottom" secondItem="48d-FW-tWF" secondAttribute="bottom" id="LfG-ud-g5C"/>
+                            <constraint firstItem="48d-FW-tWF" firstAttribute="top" secondItem="Foj-bG-kcs" secondAttribute="top" id="Oze-Cj-43e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Foj-bG-kcs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yr4-q8-au4"/>
+                    <connections>
+                        <outlet property="descriptionNewsLabel" destination="CIg-dz-Hqw" id="0Mj-Qz-uDh"/>
+                        <outlet property="fromLabel" destination="JW9-8a-l01" id="ce1-e4-m6I"/>
+                        <outlet property="newsImageView" destination="b8h-Gb-X8a" id="GAS-3T-kHT"/>
+                        <outlet property="titleNewsLabel" destination="cvw-m1-Mu7" id="boi-QT-XNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcv-rF-Rwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="-334"/>
+        </scene>
+    </scenes>
+</document>

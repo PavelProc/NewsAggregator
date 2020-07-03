@@ -25,12 +25,12 @@ class NewsViewController: UIViewController {
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         showNewsFromBD()
         updateNews()
-        viewModel.updateCollectionCompletion = {
+        TimerManager.notification = {
             self.updateNews()
         }
-        self.viewModel.addObserveUpdateNews()       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +40,7 @@ class NewsViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func typeOfPresentNews(_ sender: UISwitch) {
-        viewModel.isFullNews = sender.isOn
+        viewModel.newsDataManger.isFullNews = sender.isOn
         collectionView.reloadData()
     }
     
@@ -80,7 +80,6 @@ class NewsViewController: UIViewController {
             }
         })
     }
-    
 }
 
 

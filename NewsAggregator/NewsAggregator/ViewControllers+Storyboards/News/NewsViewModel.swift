@@ -15,14 +15,8 @@ class NewsViewModel {
     let concurrentQueue = DispatchQueue(label: "concurrentQueue", qos: .default, attributes: [.concurrent], autoreleaseFrequency: .never, target: nil)
     var group = DispatchGroup()
     var item: DispatchWorkItem?
-    var isFullNews = true
-    var updateCollectionCompletion: () -> Void = {}
     
-    //MARK: - Selectors
-    @objc private func updateNews(_ notification: Notification){
-           updateCollectionCompletion()
-       }
-    
+        
     //MARK: - Functions
     func waitedForLoadingData(completion: @escaping ()-> Void) {
         self.group.notify(queue: self.concurrentQueue) {
@@ -47,9 +41,7 @@ class NewsViewModel {
         })
     }
     
-    func addObserveUpdateNews() {
-        NotificationCenter.default.addObserver(self, selector: #selector(updateNews(_:)), name: .update, object: nil)
-    }
+  
         
     func checkForHaveThisSite(text: String) -> Bool {
         let stringURLS = CoreDataManager.shared.sites.map {$0.url}

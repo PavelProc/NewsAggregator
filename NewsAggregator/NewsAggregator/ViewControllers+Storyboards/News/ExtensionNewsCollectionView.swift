@@ -28,7 +28,7 @@ extension NewsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCollectionViewCell", for: indexPath) as? NewsCollectionViewCell else { return UICollectionViewCell() }
-        cell.descriptionNews.isHidden = !viewModel.isFullNews
+        cell.descriptionNews.isHidden = !viewModel.newsDataManger.isFullNews
         cell.news = viewModel.newsDataManger.news[indexPath.row]
         return cell
     }

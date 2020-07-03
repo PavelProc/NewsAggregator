@@ -10,16 +10,13 @@ import Foundation
 
 class TimerManager {
     
-    private init() {}
-    static let shared = TimerManager()
-    
-    var timer = Timer()
-    
-    func changeTimerValue(time: Double) {
-        Timer.scheduledTimer(timeInterval: time, target: self, selector: #selector(self.updateNews), userInfo: nil, repeats: true)
+    static var notification: () -> Void = {}
+
+    static func changeTimerValue(time: Double) {
+        Timer.scheduledTimer(timeInterval: time, target: self, selector: #selector(TimerManager.updateNews), userInfo: nil, repeats: true)
     }
     
-    @objc func updateNews() {
-        NotificationCenter.default.post(name: .update, object: nil)
+    @objc static func updateNews() {
+        notification()
     }
 }

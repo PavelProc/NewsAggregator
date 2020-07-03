@@ -17,10 +17,10 @@ class CustomLaunchScreenViewModel {
     func config() {
         if CoreDataManager.shared.timings.count == 0 {
             CoreDataManager.shared.addTiming(seconds: dataManager.defaultTimerValueSeconds)
-            TimerManager.shared.changeTimerValue(time: dataManager.defaultTimerValueSeconds)
+            TimerManager.changeTimerValue(time: dataManager.defaultTimerValueSeconds)
         } else {
             guard let seconds = CoreDataManager.shared.timings.last?.seconds else {return}
-            TimerManager.shared.changeTimerValue(time: seconds)
+            TimerManager.changeTimerValue(time: seconds)
         }
         
         dataManager.defaultParseStringURL.forEach({ stringURL in

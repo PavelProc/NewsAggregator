@@ -10,4 +10,5 @@ import Foundation
 
 class NewsDataManager {
     var news: [NewsDataBase] = []
+    var isFullNews = true
 }

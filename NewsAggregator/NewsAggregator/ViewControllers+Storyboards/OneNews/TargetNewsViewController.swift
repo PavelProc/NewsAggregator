@@ -17,7 +17,7 @@ class TargetNewsViewController: UIViewController {
     @IBOutlet weak var newsImageView: UIImageView!
     
     //MARK: - Propertyes
-    var news: NewsDataBase!
+    let oneNewsViewModel = OneNewsViewModel()
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -28,14 +28,14 @@ class TargetNewsViewController: UIViewController {
     
     //MARK: - Functions
     private func changeTargetNewsIsReaded() {
-        news.isReaded = true
-        CoreDataManager.shared.editNews(news: news)
+        oneNewsViewModel.news.isReaded = true
+        CoreDataManager.shared.editNews(news: oneNewsViewModel.news)
     }
     
     private func settingUI() {
-        guard let stringImageURL = news.imageURL, let titleNews = news.title, let descriptionNews = news.descriptionNews, let fromNews = news.link else {return}
+        guard let stringImageURL = oneNewsViewModel.news.imageURL, let titleNews = oneNewsViewModel.news.title, let descriptionNews = oneNewsViewModel.news.descriptionNews, let fromNews = oneNewsViewModel.news.link else {return}
         
-        if let imageData = news.imageData {
+        if let imageData = oneNewsViewModel.news.imageData {
             let image = UIImage(data: imageData)
             self.newsImageView.image = image
         } else {

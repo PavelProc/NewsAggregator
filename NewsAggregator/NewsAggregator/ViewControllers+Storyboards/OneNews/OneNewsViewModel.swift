@@ -1,5 +1,5 @@
 //
-//  NewsDataManager.swift
+//  OneNewsViewModel.swift
 //  NewsAggregator
 //
 //  Created by Pavel Procenko on 02.07.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class NewsDataManager {
-    var news: [NewsDataBase] = []
+class OneNewsViewModel {
+    var news: NewsDataBase!
 }

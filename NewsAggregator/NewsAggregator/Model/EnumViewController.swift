@@ -24,7 +24,7 @@ enum EnumViewController {
         case .targetNews(let news):
             let vc = getViewController(storyboardName: "TargetNews", identifierViewController: "TargetNewsViewController")
             guard let targetVC = vc as? TargetNewsViewController else {return nil}
-            targetVC.news = news
+            targetVC.oneNewsViewModel.news = news
             return vc
         case .settings:
             let vc = getViewController(storyboardName: "Settings", identifierViewController: "SettingsViewController")

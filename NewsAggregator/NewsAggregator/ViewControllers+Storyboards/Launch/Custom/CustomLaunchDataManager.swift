@@ -10,7 +10,8 @@ import Foundation
 
 class CustomLaunchDataManager {
     
+    //MARK: - Propertyes
     let defaultParseStringURL = ["http://www.gazeta.ru/export/rss/lenta.xml", "http://lenta.ru/rss"]
-    let defaultTimerValueSeconds: Double = 60
+    let defaultTimerValueSeconds: Double = 30
     
 }

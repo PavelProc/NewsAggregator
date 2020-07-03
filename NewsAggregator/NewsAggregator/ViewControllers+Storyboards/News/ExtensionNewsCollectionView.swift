@@ -13,7 +13,7 @@ import UIKit
 extension NewsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let targetNews = newsDataManager.news[indexPath.row]
+        let targetNews = viewModel.newsDataManger.news[indexPath.row]
         guard let targetViewController = EnumViewController.targetNews(news: targetNews).getViewController() else {return}
         self.goToAnotherViewController(viewController: targetViewController, typeOfNavigation: .push)
     }
@@ -22,14 +22,14 @@ extension NewsViewController: UICollectionViewDelegate {
 //MARK: - UICollectionViewDataSource
 extension NewsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return newsDataManager.news.count
+        return viewModel.newsDataManger.news.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCollectionViewCell", for: indexPath) as? NewsCollectionViewCell else { return UICollectionViewCell() }
-        cell.descriptionNews.isHidden = newsDataManager.isShortNews
-        cell.news = newsDataManager.news[indexPath.row]
+        cell.descriptionNews.isHidden = !viewModel.isFullNews
+        cell.news = viewModel.newsDataManger.news[indexPath.row]
         return cell
     }
 }

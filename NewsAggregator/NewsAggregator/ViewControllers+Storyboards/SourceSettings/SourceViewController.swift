@@ -10,6 +10,7 @@ import UIKit
 
 class SourceViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet weak var sourceTableView: UITableView! {
         didSet {
             self.sourceTableView.register(UINib.init(nibName: "SettingsTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingsTableViewCell")
@@ -18,8 +19,10 @@ class SourceViewController: UIViewController {
         }
     }
     
+    //MARK: - Propertyes
     var sites: [Site]!
     
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         sourceTableView.tableFooterView = UIView()
